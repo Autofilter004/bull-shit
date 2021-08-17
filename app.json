@@ -7,7 +7,7 @@
     "file",
     "sharing"
   ],
-  "repository": "https://github.com/CodeXBotz/File-Sharing-Bot",
+  "repository": "https://github.com/Deepu-000/bull-shit",
   "logo": "https://telegra.ph/file/200d8b026f762e7546d64.jpg",
   "env": {
     "TG_BOT_TOKEN": {

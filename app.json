@@ -8,7 +8,7 @@
     "sharing"
   ],
   "repository": "https://github.com/CodeXBotz/File-Sharing-Bot",
-  "logo": "https://telegra.ph/file/8f31eaf60bec0c0409464.jpg",
+  "logo": "https://telegra.ph/file/200d8b026f762e7546d64.jpg",
   "env": {
     "TG_BOT_TOKEN": {
       "description": "Your Bot token, Get it from @Botfather",

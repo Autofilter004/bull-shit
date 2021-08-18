@@ -93,14 +93,7 @@ async def start_command(client: Client, message: Message):
 
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
-    text = "<b> 🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭. 
-Do you want Files? If u want Files, Join our main Channel.❤️ 
-Then go to the Group and click File button, You Will get ..!😁 
- 
-⚠️YOU ARE NOT SUBSCRIBED OUR CHANNEL⚠️ 
- 
-Join on our channel to get Files ✅ 
-⬇️Channel link⬇️ </b>"
+    text = "<b> 🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭.\nDo you want Files? If u want Files, Join our main Channel.❤️ \nThen go to the Group and click File button, You Will get ..!😁 \n\n⚠️YOU ARE NOT SUBSCRIBED OUR CHANNEL⚠️ \n\nJoin on our channel to get Files ✅ \n\t\t\t⬇️Channel link⬇️ </b>"
     message_text = message.text
     try:
         command, argument = message_text.split()

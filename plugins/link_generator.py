@@ -9,7 +9,7 @@ from helper_func import encode, get_message_id
 async def batch(client: Client, message: Message):
     while True:
         try:
-            first_message = await client.ask(text = "<b>🤯𝑓𝑜𝑟𝑤𝑎𝑟𝑑 𝑡ℎ𝑒 𝑓𝑖𝑟𝑠𝑡 𝑚𝑒𝑠𝑠𝑎𝑔𝑒 𝑓𝑟𝑜𝑚 ᴅʙ 𝑐ℎ𝑎𝑛𝑛𝑒𝑙 (Wɪᴛʜ Qᴜᴏᴛᴇs).. \n\n ᴏʀ 𝑠𝑒𝑛𝑑 𝑡ℎ𝑒 ᴅʙ 𝑐ℎ𝑎𝑛𝑛𝑒𝑙 𝑝𝑜𝑠𝑡 𝑙𝑖𝑛𝑘🦔 <\b>", chat_id = message.from_user.id, filters=(filters.forwarded | (filters.text & ~filters.forwarded)), timeout=60)
+            first_message = await client.ask(text = "<b>🤯𝑓𝑜𝑟𝑤𝑎𝑟𝑑 𝑡ℎ𝑒 𝑓𝑖𝑟𝑠𝑡 𝑚𝑒𝑠𝑠𝑎𝑔𝑒 𝑓𝑟𝑜𝑚 ᴅʙ 𝑐ℎ𝑎𝑛𝑛𝑒𝑙 (Wɪᴛʜ Qᴜᴏᴛᴇs).. \n\n ᴏʀ 𝑠𝑒𝑛𝑑 𝑡ℎ𝑒 ᴅʙ 𝑐ℎ𝑎𝑛𝑛𝑒𝑙 𝑝𝑜𝑠𝑡 𝑙𝑖𝑛𝑘🦔 </b>", chat_id = message.from_user.id, filters=(filters.forwarded | (filters.text & ~filters.forwarded)), timeout=60)
         except:
             return
         f_msg_id = await get_message_id(client, first_message)
@@ -21,7 +21,7 @@ async def batch(client: Client, message: Message):
 
     while True:
         try:
-            second_message = await client.ask(text = "<b>🤭𝑓𝑜𝑟𝑤𝑎𝑟𝑑 𝑡ℎ𝑒 𝑓𝑖𝑟𝑠𝑡 𝑚𝑒𝑠𝑠𝑎𝑔𝑒 𝑓𝑟𝑜𝑚 ᴅʙ 𝑐ℎ𝑎𝑛𝑛𝑒𝑙 (Wɪᴛʜ Qᴜᴏᴛᴇs).. \n\n ᴏʀ 𝑠𝑒𝑛𝑑 𝑡ℎ𝑒 ᴅʙ 𝑐ℎ𝑎𝑛𝑛𝑒𝑙 𝑝𝑜𝑠𝑡 𝑙𝑖𝑛𝑘🐿️<\b>", chat_id = message.from_user.id, filters=(filters.forwarded | (filters.text & ~filters.forwarded)), timeout=60)
+            second_message = await client.ask(text = "<b>🤭𝑓𝑜𝑟𝑤𝑎𝑟𝑑 𝑡ℎ𝑒 𝑙𝑎𝑠𝑡 𝑚𝑒𝑠𝑠𝑎𝑔𝑒 𝑓𝑟𝑜𝑚 ᴅʙ 𝑐ℎ𝑎𝑛𝑛𝑒𝑙 (Wɪᴛʜ Qᴜᴏᴛᴇs).. \n\n ᴏʀ 𝑠𝑒𝑛𝑑 𝑡ℎ𝑒 ᴅʙ 𝑐ℎ𝑎𝑛𝑛𝑒𝑙 𝑝𝑜𝑠𝑡 𝑙𝑖𝑛𝑘🐿️</b>", chat_id = message.from_user.id, filters=(filters.forwarded | (filters.text & ~filters.forwarded)), timeout=60)
         except:
             return
         s_msg_id = await get_message_id(client, second_message)
@@ -43,7 +43,7 @@ async def batch(client: Client, message: Message):
 async def link_generator(client: Client, message: Message):
     while True:
         try:
-            channel_message = await client.ask(text = "Forward Message from the DB Channel (with Quotes)..\nor Send the DB Channel Post link", chat_id = message.from_user.id, filters=(filters.forwarded | (filters.text & ~filters.forwarded)), timeout=60)
+            channel_message = await client.ask(text = "<b>🤭𝑓𝑜𝑟𝑤𝑎𝑟𝑑 𝑡ℎ𝑒 𝑙𝑎𝑠𝑡 𝑚𝑒𝑠𝑠𝑎𝑔𝑒 𝑓𝑟𝑜𝑚 ᴅʙ 𝑐ℎ𝑎𝑛𝑛𝑒𝑙 (Wɪᴛʜ Qᴜᴏᴛᴇs).. \n\n ᴏʀ 𝑠𝑒𝑛𝑑 𝑡ℎ𝑒 ᴅʙ 𝑐ℎ𝑎𝑛𝑛𝑒𝑙 𝑝𝑜𝑠𝑡 𝑙𝑖𝑛𝑘🐿️</b>", chat_id = message.from_user.id, filters=(filters.forwarded | (filters.text & ~filters.forwarded)), timeout=60)
         except:
             return
         msg_id = await get_message_id(client, channel_message)

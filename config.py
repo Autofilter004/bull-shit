@@ -23,7 +23,8 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "​🇭 ​🇪 ​🇾 {} ʜᴏᴡ aгε ʏᴏᴜ!!<b> 𝔸𝕞  𝕁𝕦𝕤𝕥 𝔸  🇦 🇩 🇻 🇦 🇳 🇨 🇪 ᖴIᒪᗴ ՏᕼᗩᖇIᑎᘜ ᗷOT  😜
+START_MSG = os.environ.get("START_MESSAGE", "​🇭 ​🇪 ​🇾 {first} ʜᴏᴡ aгε ʏᴏᴜ!!<b> 
+𝔸𝕞  𝕁𝕦𝕤𝕥 𝔸  🇦 🇩 🇻 🇦 🇳 🇨 🇪 ᖴIᒪᗴ ՏᕼᗩᖇIᑎᘜ ᗷOT  😜
 ʏᴏᴜ  ᴀʀᴇ  ɴᴏᴛ  ᴀʙʟᴇ  ᴛᴏ ᴀᴅᴅ ᴍᴇ  ᴛᴏ  ʏᴏᴜʀ  𝔾𝕣𝕠𝕦𝕡 😐
 ​🇧 ​🇺 ​🇹   𝕐𝕠𝕦  𝕔𝕒𝕟  𝕒𝕓𝕝𝕖  𝕥𝕠  ᑕᖇᗴᗩT ᴍᴇ  😍
 TᕼIՏ ᴄᴏᴅᴇ ᴡᴀs 🅔🅓🅘🅣🅔🅓 ʙʏ  ​🇲 ​🇪 

@@ -78,7 +78,7 @@ async def start_command(client: Client, message: Message):
             ]
         )
         await message.reply_photo(photo="https://telegra.ph/file/98a2498c7f8220cb902aa.jpg", caption=START_MSG,reply_markup = reply_markup),
-            await mp.delete(message)
+            await mp.delete(message),
             quote = True
         )
         return

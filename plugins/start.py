@@ -80,9 +80,9 @@ async def start_command(client: Client, message: Message):
         await message.send_photo(
             "https://telegra.ph/file/55bc3dc62243e390f63de.jpg",
              caption=START_MSG.format(message.from_user.first_name),
-             reply_markup = reply_markup,
-             disable_web_page_preview = True,
-             quote = True
+             reply_markup=reply_markup,
+             disable_web_page_preview=True,
+             quote=True
          )
         return
 
